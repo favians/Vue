@@ -82,6 +82,11 @@ export default {
         },
         {
           icon: 'mdi-table-settings',
+          title: 'Table',
+          to: '/table'
+        },
+        {
+          icon: 'mdi-table-settings',
           title: 'Table With Component',
           to: '/tableComp'
         }
