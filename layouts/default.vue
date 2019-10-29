@@ -89,6 +89,11 @@ export default {
           icon: 'mdi-table-settings',
           title: 'Table With Component',
           to: '/tableComp'
+        },
+        {
+          icon: 'mdi-storefront',
+          title: 'Store',
+          to: '/StoreShow'
         }
       ],
       miniVariant: false,
