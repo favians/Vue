@@ -94,6 +94,11 @@ export default {
           icon: 'mdi-storefront',
           title: 'Store',
           to: '/StoreShow'
+        },
+        {
+          icon: 'mdi-restore',
+          title: 'For Loop',
+          to: '/ForOrMap'
         }
       ],
       miniVariant: false,
