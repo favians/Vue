@@ -21,15 +21,13 @@ $ yarn generate
 
 1. Feature State
 2. Feature Component
-3. Feature Link
-4. Feature Props
-5. Feature Store
-6. Feature For/Map
-7. Feature LifeCycle
-8. Feature Config Nuxt
-9. Feature Middleware
-10. Feature AsyncData
-11. Feature Storage
+3. Feature Store
+4. Feature For/Map
+5. Feature LifeCycle
+6. Feature Config Nuxt
+7. Feature Middleware
+8. Feature AsyncData
+9. Feature Storage
 
 
 
