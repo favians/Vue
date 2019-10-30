@@ -109,6 +109,11 @@ export default {
           icon: 'mdi-format-align-middle',
           title: 'Middleware',
           to: '/middleware'
+        },
+        {
+          icon: 'mdi-sync',
+          title: 'Asynchronus',
+          to: '/asyncdata'
         }
       ],
       miniVariant: false,
