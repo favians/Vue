@@ -81,6 +81,26 @@ export default {
           to: '/inspire'
         },
         {
+          icon: 'mdi-table-settings',
+          title: 'Table',
+          to: '/table'
+        },
+        {
+          icon: 'mdi-table-settings',
+          title: 'Table With Component',
+          to: '/tableComp'
+        },
+        {
+          icon: 'mdi-storefront',
+          title: 'Store',
+          to: '/StoreShow'
+        },
+        {
+          icon: 'mdi-restore',
+          title: 'For Loop',
+          to: '/ForOrMap'
+        },
+        {
           icon: 'mdi-one-up',
           title: 'Lifecycle',
           to: '/lifecycle'
