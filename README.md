@@ -28,6 +28,8 @@ $ yarn generate
 7. Feature Middleware
 8. Feature AsyncData
 9. Feature Storage
+10. Feature dotEnv
+11. Feature FormWithState
 
 
 
