@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <form>
+      <v-text-field v-model="email" label="email"></v-text-field>
+      <v-text-field v-model="password" label="password"></v-text-field>
+      <v-text-field v-model="notes" label="notes"></v-text-field>
+    </form>
+    <h1>Your Email: {{ email }}</h1>
+    <h1>Your Password: {{ password }}</h1>
+    <h1>Yoaur Notes: {{ notes }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+      notes: ''
+    }
+  }
+}
+</script>
