@@ -119,6 +119,11 @@ export default {
           icon: 'mdi-sd',
           title: 'Local Storage',
           to: '/storage'
+        },
+        {
+          icon: 'mdi-format-align-justify',
+          title: 'Form State',
+          to: '/form'
         }
       ],
       miniVariant: false,
