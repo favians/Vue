@@ -4,6 +4,9 @@
       <v-text-field v-model="email" label="email"></v-text-field>
       <v-text-field v-model="password" label="password"></v-text-field>
       <v-text-field v-model="notes" label="notes"></v-text-field>
+      <div class="my-2">
+        <v-btn color="primary" @click.prevent="onSubmitBor">On Submit</v-btn>
+      </div>
     </form>
     <h1>Your Email: {{ email }}</h1>
     <h1>Your Password: {{ password }}</h1>
@@ -18,6 +21,14 @@ export default {
       email: '',
       password: '',
       notes: ''
+    }
+  },
+  methods: {
+    onSubmitBor() {
+      console.log(this.email)
+      console.log(this.password)
+      console.log(this.notes)
+      this.$router.push('/')
     }
   }
 }
