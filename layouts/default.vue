@@ -114,6 +114,11 @@ export default {
           icon: 'mdi-sync',
           title: 'Asynchronus',
           to: '/asyncdata'
+        },
+        {
+          icon: 'mdi-sd',
+          title: 'Local Storage',
+          to: '/storage'
         }
       ],
       miniVariant: false,
