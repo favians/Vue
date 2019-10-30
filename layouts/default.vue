@@ -50,9 +50,7 @@
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
+            <v-icon light>mdi-repeat</v-icon>
           </v-list-item-action>
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
@@ -81,6 +79,46 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-table-settings',
+          title: 'Table',
+          to: '/table'
+        },
+        {
+          icon: 'mdi-table-settings',
+          title: 'Table With Component',
+          to: '/tableComp'
+        },
+        {
+          icon: 'mdi-storefront',
+          title: 'Store',
+          to: '/StoreShow'
+        },
+        {
+          icon: 'mdi-restore',
+          title: 'For Loop',
+          to: '/ForOrMap'
+        },
+        {
+          icon: 'mdi-one-up',
+          title: 'Lifecycle',
+          to: '/lifecycle'
+        },
+        {
+          icon: 'mdi-format-align-middle',
+          title: 'Middleware',
+          to: '/middleware'
+        },
+        {
+          icon: 'mdi-sync',
+          title: 'Asynchronus',
+          to: '/asyncdata'
+        },
+        {
+          icon: 'mdi-sd',
+          title: 'Local Storage',
+          to: '/storage'
         }
       ],
       miniVariant: false,
