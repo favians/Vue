@@ -99,6 +99,11 @@ export default {
           icon: 'mdi-restore',
           title: 'For Loop',
           to: '/ForOrMap'
+        },
+        {
+          icon: 'mdi-one-up',
+          title: 'Lifecycle',
+          to: '/lifecycle'
         }
       ],
       miniVariant: false,
