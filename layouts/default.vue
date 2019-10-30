@@ -124,6 +124,11 @@ export default {
           icon: 'mdi-format-align-justify',
           title: 'Form State',
           to: '/form'
+        },
+        {
+          icon: 'mdi-image-broken-variant',
+          title: 'Dot Env',
+          to: '/dotenv'
         }
       ],
       miniVariant: false,
