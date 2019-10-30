@@ -104,6 +104,11 @@ export default {
           icon: 'mdi-one-up',
           title: 'Lifecycle',
           to: '/lifecycle'
+        },
+        {
+          icon: 'mdi-format-align-middle',
+          title: 'Middleware',
+          to: '/middleware'
         }
       ],
       miniVariant: false,

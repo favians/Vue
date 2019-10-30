@@ -84,6 +84,9 @@ export default {
      */
     extend(config, ctx) {}
   },
+  router: {
+    middleware: 'testConsole'
+  },
   env: {
     TestVariable: process.env.TEST_VARIABLE || 'Hello From Test'
   }
