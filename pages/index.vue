@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="text-center" @click="TestEnv">
+      <div id="logo" class="text-center" @click="TestEnv">
         <logo />
         <vuetify-logo />
       </div>
