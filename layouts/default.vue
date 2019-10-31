@@ -134,6 +134,11 @@ export default {
           icon: 'mdi-lock',
           title: 'Axios',
           to: '/axios'
+        },
+        {
+          icon: 'mdi-lock',
+          title: 'Axios Mock',
+          to: '/axiosmock'
         }
       ],
       miniVariant: false,
