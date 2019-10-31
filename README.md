@@ -30,6 +30,9 @@ $ yarn generate
 9. Feature Storage
 10. Feature dotEnv
 11. Feature FormWithState
+12. Feature Docker
+13. Feature Unittest
+14. Feature Axios
 
 
 
