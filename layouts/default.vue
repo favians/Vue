@@ -139,6 +139,11 @@ export default {
           icon: 'mdi-lock',
           title: 'Axios Mock',
           to: '/axiosmock'
+        },
+        {
+          icon: 'mdi-account',
+          title: 'State form Page',
+          to: '/statefrompagetocomp'
         }
       ],
       miniVariant: false,
