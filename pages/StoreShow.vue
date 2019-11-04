@@ -22,7 +22,7 @@ export default {
   methods: {
     GetData1() {
       this.$store.dispatch('setData1', 'Coba Set Data 1')
-      console.log(this.$store.getters.getData1)
+      console.log(this.$store.state.Data1)
     },
     GetData2() {
       this.$store.dispatch('setData2', 'Coba Set Data 2')

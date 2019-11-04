@@ -6,7 +6,9 @@ const createStore = () => {
       Data1: '',
       Data2: '',
       Data3: '',
-      Data4: ''
+      Data4: '',
+      isAdmin: false,
+      islogin: false
     },
     mutations: {
       setData1(state, newData) {
@@ -20,6 +22,12 @@ const createStore = () => {
       },
       setData4(state, newData) {
         state.Data4 = newData
+      },
+      login(state) {
+        state.islogin = true
+      },
+      logout(state) {
+        state.islogin = false
       }
     },
     actions: {
@@ -34,6 +42,12 @@ const createStore = () => {
       },
       setData4(vuexContext, newData) {
         vuexContext.commit('setData4', newData)
+      },
+      login(vuexContext) {
+        vuexContext.commit('login')
+      },
+      logout(vuexContext) {
+        vuexContext.commit('logout')
       }
     },
     getters: {
@@ -48,6 +62,9 @@ const createStore = () => {
       },
       getData4(state) {
         return state.Data4
+      },
+      getLogin(state) {
+        return state.islogin
       }
     }
   })

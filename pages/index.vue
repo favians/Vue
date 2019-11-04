@@ -68,9 +68,30 @@ export default {
     Logo,
     VuetifyLogo
   },
+  beforeCreate() {
+    console.log('isi')
+    console.log(this.$store.state)
+    if (!localStorage.getItem('login')) {
+      this.$router.push('/login/internal/merchant/admin')
+    }
+    if (!this.$store.state.islogin) {
+      this.$router.push('/login/internal/merchant/admin')
+    }
+  },
+  created() {
+    console.log('created bro')
+  },
   methods: {
     TestEnv() {
       console.log(process.env.TestVariable)
+      const ca =
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlLCJpYXQiOjE1NzIzMjY1MTQsImV4cCI6MTU3MjQxMjkxNCwiaWRlbnRpdHkiOiJDTElFTlQxIiwibmJmIjoxNTcyMzI2NTE0LCJ1c2VyX2NsYWltcyI6eyJmY21fc2VydmVyX2tleSI6bnVsbCwiY2xpZW50X2lkIjoiQ0xJRU5UMSJ9LCJqdGkiOiI3ZGZmOWU4OS0xMzU4LTQ1MzMtYjU5OC02MTg3ZDE3NjI0OWUifQ.fhiYawJYNhmHF3dof6G5OUqH_n0a_iDdcNIsI2425Kg'
+      const base64Url = ca.split('.')[1]
+      const decodedValue = JSON.parse(window.atob(base64Url))
+      console.log(decodedValue)
+      localStorage.setItem('login', false)
+      this.$store.dispatch('logout')
+      this.$router.push('/')
     }
   }
 }
