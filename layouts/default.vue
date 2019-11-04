@@ -129,6 +129,16 @@ export default {
           icon: 'mdi-image-broken-variant',
           title: 'Dot Env',
           to: '/dotenv'
+        },
+        {
+          icon: 'mdi-lock',
+          title: 'Axios',
+          to: '/axios'
+        },
+        {
+          icon: 'mdi-lock',
+          title: 'Axios Mock',
+          to: '/axiosmock'
         }
       ],
       miniVariant: false,
