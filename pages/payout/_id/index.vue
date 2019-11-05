@@ -3,6 +3,16 @@
     <v-alert v-model="success" type="success">
       Request aproved
     </v-alert>
+    <h1 style="color:#1d62db;">Send Payment Approval</h1>
+    <div v-if="!success">
+      <br />
+      <p>Hi Finance Lead,</p>
+      <p>
+        Berikut detail transaksi yang membutuhkan approval dari Anda. Untuk
+        melakukan konfirmasi silakan pilih item pada tabel dan masukkan OTP yang
+        terkirim ke nomor hp anda!
+      </p>
+    </div>
     <TableComp
       v-if="!success"
       :headers="transaction_header"
@@ -45,7 +55,7 @@ export default {
   },
   data() {
     return {
-      batch_no: '33333-33333-33333',
+      batch_no: this.$route.params.id,
       transaction: [],
       transaction_header: [
         {

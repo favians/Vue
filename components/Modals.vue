@@ -4,7 +4,7 @@
       <!-- <template v-slot:activator="{ on }">
         <v-btn color="primary" dark v-on="on">Open Dialog</v-btn>
     </template> -->
-      <v-alert type="error" v-model="alert">
+      <v-alert v-model="alert" type="error">
         Mismatch OTP.
       </v-alert>
       <v-card>
@@ -30,14 +30,12 @@
         >
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="green darken-1" text @click="actionCancel"
-            >Disagree</v-btn
-          >
+          <v-btn color="green darken-1" text @click="onCancel">Disagree</v-btn>
           <v-btn
             color="green darken-1"
             text
             :loading="loadingbtn"
-            @click="agree"
+            @click="onagree"
             >Agree</v-btn
           >
         </v-card-actions>
@@ -48,11 +46,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      otp: ''
-    }
-  },
   props: {
     alert: {
       type: Boolean,
@@ -79,9 +72,22 @@ export default {
       default: () => (this.isShow = false)
     }
   },
+  data() {
+    return {
+      otp: ''
+    }
+  },
   methods: {
     onchange() {
       this.$emit('inputotp', this.otp)
+    },
+    onagree() {
+      this.agree(this.otp)
+      this.otp = ''
+    },
+    onCancel() {
+      this.actionCancel()
+      this.otp = ''
     }
   }
 }

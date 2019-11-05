@@ -82,64 +82,74 @@ export default {
         },
         {
           icon: 'mdi-table-settings',
-          title: 'Table',
-          to: '/table'
-        },
-        {
-          icon: 'mdi-table-settings',
-          title: 'Table With Component',
-          to: '/tableComp'
-        },
-        {
-          icon: 'mdi-storefront',
-          title: 'Store',
-          to: '/StoreShow'
-        },
-        {
-          icon: 'mdi-restore',
-          title: 'For Loop',
-          to: '/ForOrMap'
-        },
-        {
-          icon: 'mdi-one-up',
-          title: 'Lifecycle',
-          to: '/lifecycle'
-        },
-        {
-          icon: 'mdi-format-align-middle',
-          title: 'Middleware',
-          to: '/middleware'
-        },
-        {
-          icon: 'mdi-sync',
-          title: 'Asynchronus',
-          to: '/asyncdata'
-        },
-        {
-          icon: 'mdi-sd',
-          title: 'Local Storage',
-          to: '/storage'
-        },
-        {
-          icon: 'mdi-format-align-justify',
-          title: 'Form State',
-          to: '/form'
-        },
-        {
-          icon: 'mdi-image-broken-variant',
-          title: 'Dot Env',
-          to: '/dotenv'
-        },
-        {
-          icon: 'mdi-lock',
-          title: 'Axios',
-          to: '/axios'
-        },
-        {
-          icon: 'mdi-lock',
-          title: 'Axios Mock',
-          to: '/axiosmock'
+          title: 'Payout',
+          to: '/payout'
         }
+        // {
+        //   icon: 'mdi-table-settings',
+        //   title: 'Table',
+        //   to: '/table'
+        // },
+        // {
+        //   icon: 'mdi-table-settings',
+        //   title: 'Table With Component',
+        //   to: '/tableComp'
+        // },
+        // {
+        //   icon: 'mdi-storefront',
+        //   title: 'Store',
+        //   to: '/StoreShow'
+        // },
+        // {
+        //   icon: 'mdi-restore',
+        //   title: 'For Loop',
+        //   to: '/ForOrMap'
+        // },
+        // {
+        //   icon: 'mdi-one-up',
+        //   title: 'Lifecycle',
+        //   to: '/lifecycle'
+        // },
+        // {
+        //   icon: 'mdi-format-align-middle',
+        //   title: 'Middleware',
+        //   to: '/middleware'
+        // },
+        // {
+        //   icon: 'mdi-sync',
+        //   title: 'Asynchronus',
+        //   to: '/asyncdata'
+        // },
+        // {
+        //   icon: 'mdi-sd',
+        //   title: 'Local Storage',
+        //   to: '/storage'
+        // },
+        // {
+        //   icon: 'mdi-format-align-justify',
+        //   title: 'Form State',
+        //   to: '/form'
+        // },
+        // {
+        //   icon: 'mdi-image-broken-variant',
+        //   title: 'Dot Env',
+        //   to: '/dotenv'
+        // },
+        // {
+        //   icon: 'mdi-lock',
+        //   title: 'Axios',
+        //   to: '/axios'
+        // },
+        // {
+        //   icon: 'mdi-table-settings',
+        //   title: 'Action Table',
+        //   to: '/actiontable'
+        // },
+        // {
+        //   icon: 'mdi-lock',
+        //   title: 'Axios Mock',
+        //   to: '/axiosmock'
+        // }
       ],
       miniVariant: false,
       right: true,

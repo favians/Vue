@@ -26,27 +26,26 @@
                     type="text"
                   ></v-text-field>
                   <v-text-field
-                    id="password"
                     v-model="model.password"
-                    append-icon="lock"
-                    name="password"
+                    :append-icon="show1 ? 'visibility' : 'visibility_off'"
+                    :rules="[rules.required, rules.min]"
+                    :type="show1 ? 'text' : 'password'"
+                    name="input-password"
                     label="Password"
-                    type="password"
+                    hint="At least 8 characters"
+                    counter
+                    @click:append="show1 = !show1"
                   ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
-                <v-btn icon>
-                  <v-icon color="blue">fa fa-facebook-square fa-lg</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon color="red">fa fa-google fa-lg</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon color="light-blue">fa fa-twitter fa-lg</v-icon>
-                </v-btn>
                 <v-spacer></v-spacer>
-                <v-btn class="login-btn" block color="primary" @click="login">
+                <v-btn
+                  block
+                  color="primary"
+                  style="maxwidth=100%"
+                  @click="login"
+                >
                   Login
                 </v-btn>
               </v-card-actions>
@@ -62,9 +61,14 @@
 export default {
   data() {
     return {
+      show1: false,
       model: {
         username: '',
         password: ''
+      },
+      rules: {
+        required: (value) => !!value || 'Required.',
+        min: (v) => v.length >= 8 || 'Min 8 characters'
       }
     }
   },
