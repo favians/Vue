@@ -16,6 +16,6 @@ script:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
+    script: pwd && chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
     on:
       branch: 17-feature-cicd
