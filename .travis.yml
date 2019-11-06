@@ -1,4 +1,5 @@
 sudo: enabled
+os: linux
 language: node_js
   - lts/*
   
@@ -6,13 +7,17 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - cp $TRAVIS_PROJECT_DIR/deploy/travis.env $TRAVIS_PROJECT_DIR/.env
+  - npm i -g npm-upgrade
+
 script:
-  - pwd
-  - openssl version
+  - npm i
+  - npm run test
 
 deploy:
   - provider: script
     skip_cleanup: true
-    script: chmod +x /home/travis/build/favians/Vue/deploy/deploy-travis.sh && /home/travis/build/favians/Vue/deploy/deploy-travis.sh
+    script: chmod +x $TRAVIS_PROJECT_DIR/deploy/deploy-travis.sh && $TRAVIS_PROJECT_DIR/deploy/deploy-travis.sh
     on:
       branch: 17-feature-cicd
