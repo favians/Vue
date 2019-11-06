@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:13.0.1-alpine
 
 ARG NUXT_HOST="localhost"
 ARG NUXT_PORT="3000"
