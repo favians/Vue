@@ -10,8 +10,8 @@ before_install:
   - npm i -g npm-upgrade
 
 script:
-  # - npm i
-  # - npm run test
+  - npm i
+  - npm run test
   - pwd
   - chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
 
