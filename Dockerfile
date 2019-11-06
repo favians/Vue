@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest
 
 ARG NUXT_HOST="localhost"
 ARG NUXT_PORT="3000"
@@ -9,13 +9,13 @@ ENV NUXT_PORT=${NUXT_PORT}
 WORKDIR 'app/'
 
 COPY package.json .
-
-RUN apk --no-cache --virtual build-dependencies add \
-    python \
-    make \
-    g++ \
-    && npm install \
-    && apk del build-dependencies
+RUN npm install
+# RUN apk --no-cache --virtual build-dependencies add \
+#     python \
+#     make \
+#     g++ \
+#     && npm install \
+#     && apk del build-dependencies
 
 COPY . .
 EXPOSE 3000
