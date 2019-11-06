@@ -18,4 +18,4 @@ deploy:
     skip_cleanup: true
     script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
     on:
-      branch: master
+      all_branches: true

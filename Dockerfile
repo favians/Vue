@@ -9,6 +9,7 @@ ENV NUXT_PORT=${NUXT_PORT}
 WORKDIR 'app/'
 
 COPY package.json .
+RUN npm install
 
 # RUN apk --no-cache --virtual build-dependencies add \
 #     python \
