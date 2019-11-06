@@ -8,7 +8,6 @@ cache:
 
 script:
   - pwd
-  - chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
 
 deploy:
   - provider: script
