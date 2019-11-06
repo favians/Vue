@@ -19,4 +19,4 @@ deploy:
     skip_cleanup: true
     script: chmod +x /deploy/deploy-travis.sh && deploy/deploy-travis.sh
     on:
-      branch: master
+      branch: 17-feature-cicd
