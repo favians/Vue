@@ -8,6 +8,7 @@ cache:
 
 script:
   - pwd
+  - openssl version
 
 deploy:
   - provider: script
