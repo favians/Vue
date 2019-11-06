@@ -12,11 +12,11 @@ before_install:
 script:
   - npm i
   - npm run test
-  - chmod +x /deploy/deploy-travis.sh && deploy/deploy-travis.sh
+  - chmod +x /deploy/deploy-travis.sh && /deploy/deploy-travis.sh
 
 deploy:
   - provider: script
     skip_cleanup: true
     script: chmod +x /deploy/deploy-travis.sh && deploy/deploy-travis.sh
     on:
-      all_branches: true
+      branch: master
