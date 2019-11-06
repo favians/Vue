@@ -1,5 +1,6 @@
 sudo: enabled
 language: node_js
+  - "6"
 
 cache:
   directories:
