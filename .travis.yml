@@ -6,14 +6,14 @@ cache:
   directories:
     - node_modules
 
-# before_install:
-#   - docker build -t jellyfish/lucent-dasboard .
-
-# script:
-#   - docker run jellyfish/lucent-dasboard npm run test
+before_install:
+  - docker build -t jellyfish/lucent-dasboard .
 
 script:
-  - npm run test
+  - docker run jellyfish/lucent-dasboard npm run test
+
+# script:
+#   - npm run test
 
 # deploy:
 #   - provider: script
