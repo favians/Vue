@@ -1,0 +1,17 @@
+sudo: enabled
+os: linux
+services:
+  - docker
+
+before_install:
+  - docker build -t jellyfish/lucent-dasboard .
+
+script:
+  - docker run jellyfish/lucent-dasboard npm run test
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
+    on:
+      branch: master
