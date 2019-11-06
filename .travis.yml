@@ -1,17 +1,19 @@
 sudo: enabled
 language: node_js
-services:
-  - docker
 
-before_install:
-  - docker build -t jellyfish/lucent-dasboard .
+cache:
+  directories:
+    - node_modules
+
+# before_install:
+#   - docker build -t jellyfish/lucent-dasboard .
 
 script:
   - docker run jellyfish/lucent-dasboard npm run test
 
-deploy:
-  - provider: script
-    skip_cleanup: true
-    script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
-    on:
-      branch: master
+# deploy:
+#   - provider: script
+#     skip_cleanup: true
+#     script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
+#     on:
+#       branch: master
