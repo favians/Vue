@@ -9,8 +9,11 @@ cache:
 # before_install:
 #   - docker build -t jellyfish/lucent-dasboard .
 
+# script:
+#   - docker run jellyfish/lucent-dasboard npm run test
+
 script:
-  - docker run jellyfish/lucent-dasboard npm run test
+  - npm run test
 
 # deploy:
 #   - provider: script
