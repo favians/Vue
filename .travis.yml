@@ -1,5 +1,4 @@
 sudo: enabled
-os: linux
 services:
   - docker
 
