@@ -1,0 +1,21 @@
+sudo: enabled
+language: node_js
+  - lts/*
+  
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm i -g npm-upgrade
+
+script:
+  - npm i
+  - npm run test
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: chmod +x ./deploy/deploy-travis.sh && ./deploy/deploy-travis.sh
+    on:
+      all_branches: true
