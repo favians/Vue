@@ -10,7 +10,7 @@ before_install:
   - docker build -t jellyfish/lucent-dasboard .
 
 script:
-  - docker run jellyfish/lucent-dasboard npm run test
+  - docker run jellyfish/lucent-dasboard npm test
 
 # script:
 #   - npm i
