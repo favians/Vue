@@ -10,4 +10,4 @@ git pull origin $DEVELOPMENT_BRANCH
 cp /deploy/docker-compose-dev.yaml ./docker-compose.yaml
 
 sudo docker-compose down
-sudo docker-compose up --build
+sudo docker-compose up --build -d
